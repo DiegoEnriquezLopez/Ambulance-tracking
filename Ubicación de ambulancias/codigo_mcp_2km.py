@@ -29,7 +29,6 @@ def robust_read_csv(path):
     return pd.read_csv(path, engine="python")
 
 def haversine_km(lat1, lon1, lat2, lon2):
-    """Distancia Haversine en km entre arrays lat1/lon1 y lat2/lon2."""
     R = 6371.0  
     dlat = np.radians(lat2 - lat1)
     dlon = np.radians(lon2 - lon1)
